@@ -50,6 +50,13 @@ nav {
     font-weight: bold;
     color: var(--gold);
     letter-spacing: 2px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.logo:hover {
+    color: var(--accent);
 }
 
 .nav-links {
