@@ -6,10 +6,11 @@
 }
 
 :root {
-    --gold: #D4AF37;
-    --dark: #2c2c2c;
-    --light: #f8f6f3;
+    --gold: #785D32; /* palette Gold */
+    --dark: #050A30; /* Off-Navy */
+    --light: #EBD9C4; /* Pale */
     --grey: #666;
+    --accent: #3E160C; /* Rough / deep brown */
 }
 
 body {
@@ -73,7 +74,7 @@ nav {
 .hero {
     height: 100vh;
     background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.3)), 
-                url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect fill="%23f8f6f3" width="1200" height="800"/><circle cx="600" cy="400" r="300" fill="%23D4AF37" opacity="0.1"/></svg>');
+                url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect fill="%23EBD9C4" width="1200" height="800"/><circle cx="600" cy="400" r="300" fill="%23785D32" opacity="0.1"/></svg>');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -117,9 +118,9 @@ nav {
 }
 
 .cta-button:hover {
-    background: #c19b2e;
+    background: var(--accent);
     transform: translateY(-2px);
-    box-shadow: 0 10px 25px rgba(212, 175, 55, 0.3);
+    box-shadow: 0 10px 25px rgba(120, 93, 50, 0.25);
 }
 
 /* ===== About Section ===== */
@@ -185,7 +186,7 @@ nav {
 .card-image {
     width: 100%;
     height: 350px;
-    background: linear-gradient(135deg, #D4AF37 0%, #c19b2e 100%);
+    background: linear-gradient(135deg, var(--gold) 0%, var(--accent) 100%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -219,12 +220,12 @@ nav {
 
 /* ===== Section Personnalisation Banner ===== */
 .personalisation-banner {
-    background: linear-gradient(135deg, #D4AF37 0%, #c19b2e 100%);
+    background: linear-gradient(135deg, var(--gold) 0%, var(--accent) 100%);
     padding: 80px 5%;
     margin: 60px 20px;
     border-radius: 20px;
     text-align: center;
-    box-shadow: 0 10px 40px rgba(212, 175, 55, 0.3);
+    box-shadow: 0 10px 40px rgba(120, 93, 50, 0.25);
     position: relative;
     overflow: hidden;
 }
@@ -285,7 +286,7 @@ nav {
     display: inline-block;
     padding: 18px 45px;
     background: white;
-    color: #D4AF37;
+    color: var(--gold);
     text-decoration: none;
     border-radius: 50px;
     font-weight: 600;
@@ -333,11 +334,11 @@ nav {
 }
 
 :root {
-    --gold: #D4AF37;
-    --dark: #2c2c2c;
-    --light: #f8f6f3;
+    --gold: #785D32; /* palette Gold */
+    --dark: #050A30; /* Off-Navy */
+    --light: #EBD9C4; /* Pale */
     --grey: #666;
-}
+    --accent: #3E160C; /* Rough / deep brown */
 
 body {
     font-family: 'Georgia', serif;
@@ -350,7 +351,7 @@ body {
 .vitrine-header {
     text-align: center;
     padding: 60px 20px;
-    background: linear-gradient(135deg, #D4AF37 0%, #c19b2e 100%);
+    background: linear-gradient(135deg, var(--gold) 0%, var(--accent) 100%);
     color: white;
 }
 
@@ -419,7 +420,7 @@ body {
 
 .carousel-item:hover {
     transform: translateY(-10px);
-    box-shadow: 0 10px 30px rgba(212, 175, 55, 0.3);
+    box-shadow: 0 10px 30px rgba(120, 93, 50, 0.25);
 }
 
 .carousel-item img {
@@ -456,9 +457,9 @@ body {
 }
 
 .carousel-btn:hover {
-    background: #c19b2e;
+    background: var(--accent);
     transform: translateY(-50%) scale(1.1);
-    box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4);
+    box-shadow: 0 6px 20px rgba(120, 93, 50, 0.35);
 }
 
 .carousel-btn.prev {
@@ -583,7 +584,7 @@ body {
 .form-group textarea:focus {
     outline: none;
     border-color: var(--gold);
-    box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.1);
+    box-shadow: 0 0 0 3px rgba(120, 93, 50, 0.08);
 }
 
 .form-group textarea {
@@ -603,7 +604,7 @@ body {
 .btn-submit {
     width: 100%;
     padding: 16px 40px;
-    background: linear-gradient(135deg, var(--gold) 0%, #c19b2e 100%);
+    background: linear-gradient(135deg, var(--gold) 0%, var(--accent) 100%);
     color: white;
     border: none;
     border-radius: 50px;
@@ -612,14 +613,14 @@ body {
     letter-spacing: 1px;
     cursor: pointer;
     transition: all 0.3s;
-    box-shadow: 0 5px 20px rgba(212, 175, 55, 0.3);
+    box-shadow: 0 5px 20px rgba(120, 93, 50, 0.25);
     margin-top: 10px;
 }
 
 .btn-submit:hover {
-    background: linear-gradient(135deg, #c19b2e 0%, var(--gold) 100%);
+    background: linear-gradient(135deg, var(--accent) 0%, var(--gold) 100%);
     transform: translateY(-3px);
-    box-shadow: 0 8px 25px rgba(212, 175, 55, 0.4);
+    box-shadow: 0 8px 25px rgba(120, 93, 50, 0.35);
 }
 
 .btn-submit:active {
