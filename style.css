@@ -228,6 +228,7 @@ nav {
     box-shadow: 0 10px 40px rgba(120, 93, 50, 0.25);
     position: relative;
     overflow: hidden;
+    scroll-margin-top: 100px;
 }
 
 .personalisation-banner::before {
