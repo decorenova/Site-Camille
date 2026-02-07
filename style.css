@@ -80,8 +80,9 @@ nav {
 /* ===== Hero Section ===== */
 .hero {
     height: 100vh;
-    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.3)), 
-                url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect fill="%23EBD9C4" width="1200" height="800"/><circle cx="600" cy="400" r="300" fill="%23785D32" opacity="0.1"/></svg>');
+    background: 
+        linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.3)),
+        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect fill="%23EBD9C4" width="1200" height="800"/></svg>');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -89,6 +90,22 @@ nav {
     justify-content: center;
     text-align: center;
     margin-top: 80px;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: url('Camille.jpeg') center/cover;
+    border-radius: 50%;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    opacity: 0.3;
+    border: 5px solid var(--gold);
 }
 
 .hero-content {
@@ -96,6 +113,8 @@ nav {
     max-width: 800px;
     padding: 0 20px;
     animation: fadeInUp 1s ease;
+    position: relative;
+    z-index: 1;
 }
 
 .hero h1 {
