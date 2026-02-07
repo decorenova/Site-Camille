@@ -101,7 +101,7 @@ nav {
     height: 600px;
     background: url('Camille.jpeg') center/cover;
     border-radius: 50%;
-    top: 60%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 0;
