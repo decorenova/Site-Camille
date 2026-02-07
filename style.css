@@ -91,20 +91,21 @@ nav {
     text-align: center;
     margin-top: 80px;
     position: relative;
+    overflow: hidden;
 }
 
 .hero::before {
     content: '';
     position: absolute;
-    width: 800px;
-    height: 800px;
+    width: 600px;
+    height: 600px;
     background: url('Camille.jpeg') center/cover;
     border-radius: 50%;
-    top: 55%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 0;
-    opacity: 0.3;
+    opacity: 0.6;
     border: 5px solid var(--gold);
 }
 
