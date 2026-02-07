@@ -96,8 +96,8 @@ nav {
 .hero::before {
     content: '';
     position: absolute;
-    width: 400px;
-    height: 400px;
+    width: 800px;
+    height: 800px;
     background: url('Camille.jpeg') center/cover;
     border-radius: 50%;
     top: 55%;
